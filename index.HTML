@@ -14,7 +14,7 @@
    <div class="container">
     <div class="weather-box-wrapper">
       <div class="weather-box">
-
+<h1 id="current-city"></h1>
       <ul>
          <li> Last updated: <span id="current-date"></span> 
          </li>
@@ -22,10 +22,10 @@
        
       </li>
    </ul>
-
-<h1 id="current-city"></h1><div class= "row">
+   
+<div class= "row">
 <div class="col-6">
-   <img src= "https://ssl.gstatic.com/onebox/weather/64/cloudy.png" id= "icon" alt="weather icon"/>
+   <img src= "https://ssl.gstatic.com/onebox/weather/64/cloudy.png" class= "icon" id= "icon" alt="weather icon"/>
    
    <strong class="weather-temp">
       <span id="temperature">17   
@@ -33,19 +33,31 @@
    </strong> 
 <small class="weather-unit"> C | F </small></div>
    <div class="col-6">
-      <ul>
+     <div class="hum-speed"> <ul>
          <li><span id="current-humidity"></span>
-  %
+  % humidity
 </li>
 <li><span id= "wind-speed"></span>
-   km/h
+   km/h wind
 </li>
 </ul>
+</div></div>
+</div><form id="search-form">
+   <div class="row">
+      <div class="col-8">
+         <input type="search" placeholder="Change city..." class="form-control" />
+      </div>
+      <div class="col-4">
+         <input type="submit" value="search" class="btn btn-success" />
+      </div>
+   </div>
+</form>
 </div>
-</div></div></div>
+
+
 <small><a href="https://github.com/mackenziehodge/vanilla-weather-app">Open Sourced Code</a> by Mackenzie Hodge</small>
    </div> 
-  
+</div>
    <script src="src/app.js"></script>
 </body>
 </html>
