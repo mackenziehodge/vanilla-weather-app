@@ -34,12 +34,22 @@ ul {
   margin: 30px auto;
 }
 .weather-temp {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 400;
+  position: relative;
+  top: -5px;
 }
 .weather-unit {
   position: relative;
   font-size: 16px;
   top: -34px;
   color: blue;
+}
+.icon {
+  position: relative;
+  top: -15px;
+}
+.hum-speed {
+  position: relative;
+  top: 15px;
 }
