@@ -53,3 +53,10 @@ ul {
   position: relative;
   top: 15px;
 }
+.weather-unit .active {
+  color: black;
+  cursor: default;
+}
+.weather-unit .active:hover {
+  text-decoration: none;
+}

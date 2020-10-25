@@ -29,9 +29,9 @@
    
    <strong class="weather-temp">
       <span id="temperature">17   
-      </span>°
+      </span>
    </strong> 
-<small class="weather-unit"> C | F </small></div>
+<small class="weather-unit"><a href="#" class="active" id="celsius"> °C</a> |<a href="#" id="fahrenheit"> °F</a> </small></div>
    <div class="col-6">
      <div class="hum-speed"> <ul>
          <li><span id="current-humidity"></span>
@@ -45,7 +45,11 @@
 </div><form id="search-form">
    <div class="row">
       <div class="col-8">
-         <input type="search" placeholder="Change city..." id="city-input" class="form-control" />
+         <input type="search"
+          placeholder="Change city..." 
+          id="city-input" 
+          class="form-control"
+          autocomplete="off" />
       </div>
       <div class="col-4">
          <input type="submit" value="search" class="btn btn-success" />
