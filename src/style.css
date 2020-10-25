@@ -23,7 +23,16 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+.forecast-table {
+  text-transform: capitalize;
+  text-align: center;
+}
+.forecast-table img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
 .weather-box {
   padding: 20px;
   border: 1px solid grey;
