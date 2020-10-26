@@ -3,7 +3,7 @@ body {
 }
 small {
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 h1 {
   color: #0fa3b1;
@@ -30,7 +30,8 @@ ul {
 }
 .container {
   background-color: #e4a0a8;
-  height: 700px;
+  height: 600px;
+  border-radius: 4px;
 }
 .last-updated li {
   color: #6d7188;
@@ -76,7 +77,7 @@ ul {
   border: 1px solid #6d7188;
   border-radius: 4px;
   position: relative;
-  top: 15px;
+  top: 30px;
 }
 .weather-box-wrapper {
   max-width: 600px;
