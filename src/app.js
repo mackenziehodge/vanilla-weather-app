@@ -27,7 +27,8 @@ function displayTemperature(response){
     let humidity= document.querySelector("#current-humidity");
     let windSpeed= document.querySelector("#wind-speed");
     let dateElement= document.querySelector("#current-date");
-    let iconElement= document.querySelector("#icon")
+    let iconElement= document.querySelector("#icon");
+    let feelsLike=document.querySelector("#feels-like")
 
     celsiusTemperature=response.data.main.temp;
 
@@ -38,8 +39,10 @@ function displayTemperature(response){
     windSpeed.innerHTML= Math.round(response.data.wind.speed);
     dateElement.innerHTML= formatDate(response.data.dt * 1000);
     iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    iconElement.setAttribute("alt",response.data.weather[0].description)
-   
+    iconElement.setAttribute("alt",response.data.weather[0].description);
+    feelsLike.innerHTML=Math.round(response.data.main.feels_like);
+
+    console.log(response.data)
 } 
 function displayForecast(response){
     let forecastElement = document.querySelector("#forecast")
