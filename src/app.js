@@ -107,4 +107,4 @@ fahrenheit.addEventListener("click", displayFahrenheit);
 let celsius = document.querySelector("#celsius");
 celsius.addEventListener("click", displayCelsius);
 
-search("New York");
+search("London");

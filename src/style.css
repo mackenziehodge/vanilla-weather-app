@@ -1,24 +1,23 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+small {
+  position: relative;
+  top: 20px;
+}
 h1 {
-  color: rgb(135, 135, 135);
+  color: #0fa3b1;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
 }
-.weather-forecast h3 {
-  color: rgb(186, 186, 186);
-  font-size: 16px;
-  height: 20px;
-  line-height: 15px;
-}
+
 li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
+  color: #4d5061;
   line-height: 19px;
   font-weight: 100;
 }
@@ -29,7 +28,23 @@ ul {
   margin: 0;
   padding: 0;
 }
+.container {
+  background-color: #e4a0a8;
+  height: 500px;
+}
+.last-updated li {
+  color: #6d7188;
+  line-height: 40px;
+}
+.weather-forecast h3 {
+  color: #4d5061;
+  font-size: 16px;
+
+  height: 20px;
+  line-height: 15px;
+}
 .forecast-temp {
+  color: #0fa3b1;
   font-size: 16px;
 }
 .forecast-table {
@@ -42,16 +57,38 @@ ul {
   height: 48px;
   width: 48px;
 }
+.search-button {
+  background-color: #0fa3b1;
+  border: 1px solid #6d7188;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 5px 15px;
+  transition: all 200ms ease-in-out;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+.search-button:hover {
+  cursor: pointer;
+  background: #4d5061;
+}
 .weather-box {
+  background-color: #eed9d3;
   padding: 20px;
-  border: 1px solid grey;
+  border: 1px solid #6d7188;
   border-radius: 4px;
+  position: relative;
+  top: 15px;
 }
 .weather-box-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 10px auto;
+}
+.weather-description {
+  font-size: 32px;
+
+  line-height: 48px;
 }
 .weather-temp {
+  color: #0fa3b1;
   font-size: 60px;
   font-weight: 400;
   position: relative;
@@ -61,7 +98,7 @@ ul {
   position: relative;
   font-size: 16px;
   top: -34px;
-  color: blue;
+  color: #0fa3b1;
 }
 .icon {
   position: relative;
@@ -72,9 +109,15 @@ ul {
   top: 15px;
 }
 .weather-unit .active {
-  color: black;
+  color: #4d5061;
   cursor: default;
 }
 .weather-unit .active:hover {
+  text-decoration: none;
+}
+.code-link {
+  color: #0fa3b1;
+}
+.code-link:hover {
   text-decoration: none;
 }

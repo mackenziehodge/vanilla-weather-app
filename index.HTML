@@ -16,11 +16,15 @@
       <div class="weather-box">
 <h1 id="current-city"></h1>
       <ul>
-         <li> Last updated: <span id="current-date"></span> 
-         </li>
-     <li id="current-description">
-       
+        
+     <span class= "weather-description"><li id="current-description">
+     </li>
+   </span>
+      <span class="last-updated"><li> 
+         Last updated: 
+         <span id="current-date"></span>
       </li>
+   </span>
    </ul>
    
 <div class= "row">
@@ -61,14 +65,21 @@
           autocomplete="off" />
       </div>
       <div class="col-4">
-         <input type="submit" value="search" class="btn btn-success" />
+         <input type="submit" value="Search" class="search-button" />
       </div>
    </div>
 </form>
 </div>
 
 
-<small><a href="https://github.com/mackenziehodge/vanilla-weather-app">Open Sourced Code</a> by Mackenzie Hodge</small>
+<footer>
+   <small>
+      <a href="https://github.com/mackenziehodge/vanilla-weather-app" class="code-link">
+         Open Sourced Code
+      </a> 
+      by Mackenzie Hodge
+</small>
+</footer>
    </div> 
 </div>
    <script src="src/app.js"></script>
