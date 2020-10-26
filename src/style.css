@@ -8,6 +8,12 @@ h1 {
   line-height: 28px;
   margin-bottom: 0;
 }
+.weather-forecast h3 {
+  color: rgb(186, 186, 186);
+  font-size: 16px;
+  height: 20px;
+  line-height: 15px;
+}
 li {
   list-style: none;
   margin: 0;
