@@ -72,6 +72,17 @@ axios.get(apiUrl).then(displayTemperature);
 apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayForecast)
 } 
+function searchLocation(position) {
+    let apiKey = "ab59ca7402d6fc239c3f8d540f4ab058";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
@@ -98,6 +109,8 @@ function displayCelsius(event){
 }
 let celsiusTemperature= null;
 
+let currentLocationButton = document.querySelector("#current-location");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let form=document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

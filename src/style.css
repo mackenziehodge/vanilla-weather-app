@@ -55,15 +55,28 @@ ul {
 .forecast-table img {
   display: block;
   margin: 0 auto;
-  height: 48px;
-  width: 48px;
+  height: 58px;
+  width: 58px;
+}
+.find-button {
+  background-color: #0fa3b1;
+  border: 1px solid #6d7188;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+.find-button:hover {
+  cursor: pointer;
+  background: #4d5061;
 }
 .search-button {
   background-color: #0fa3b1;
   border: 1px solid #6d7188;
   border-radius: 8px;
   color: #ffffff;
-  padding: 5px 15px;
+  padding: 10px;
   transition: all 200ms ease-in-out;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
@@ -71,6 +84,7 @@ ul {
   cursor: pointer;
   background: #4d5061;
 }
+
 .weather-box {
   background-color: #eed9d3;
   padding: 20px;
